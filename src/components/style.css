@@ -120,4 +120,66 @@ button[type="submit"]:hover {
     background-color: #4169e1;
     padding: 10px;
     text-align: center;
+    padding: 20px;
+}
+.footer-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.footer-logo {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-logo img {
+    width: 150px; /* Adjust the width as needed */
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    margin: 0;
+    line-height: 1.5; /* Adjust line height as needed */
+}
+
+.quick-links {
+    flex: 1;
+}
+
+.quick-links h4 {
+    margin-bottom: 10px;
+}
+
+.quick-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin-bottom: 5px;
+}
+
+.quick-links a {
+    color: #fff;
+    text-decoration: none;
+}
+#footer-text {
+    color: white;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
 }

@@ -4,20 +4,35 @@ import userData from "../assets/data.json";
 function LoginPage() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const [error, setError] = useState("");
+    const [error, setError] = useState({});
 
     const handleLogin = (e) => {
         e.preventDefault();
-        // Check if the username and password match any user
+
+        // Validate inputs
+        const newError = {};
+        if (!username) {
+            newError.username = "Username can't be empty !!";
+        }
+        if (!password) {
+            newError.password = "Password can't be empty !!";
+        }
+
+        setError(newError);
+
+        // If there are validation errors, stop further processing
+        if (Object.keys(newError).length > 0) return;
+
+        // Check user credentials
         const user = userData.find(
             (user) => user.username === username && user.password === password
         );
 
         if (user) {
-            setError("");
+            setError({});
             alert("Login Successful! ✅");
         } else {
-            setError("Invalid username or password ❌");
+            setError({ fail: "Invalid username or password ❌" });
         }
     };
 
@@ -33,6 +48,7 @@ function LoginPage() {
                         onChange={(e) => setUsername(e.target.value)}
                     />
                 </label>
+                {error.username && <p className="error">{error.username}</p>}
                 <br />
                 <label>
                     Password:
@@ -42,10 +58,11 @@ function LoginPage() {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </label>
+                {error.password && <p className="error">{error.password}</p>}
                 <br />
                 <button type="submit">Login</button>
+                {error.fail && <p className="error">{error.fail}</p>}
             </form>
-            {error && <p style={{ color: "red" }}>{error}</p>}
         </div>
     );
 }
