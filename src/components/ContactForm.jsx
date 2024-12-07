@@ -41,6 +41,11 @@ function ContactForm() {
                 email,
                 message,
             });
+            setName(""),
+                setEmail(""),
+                setMessage(""),
+                setErrors({}),
+                setIsChecked(false);
         } else {
             console.log("Form contains errors.");
         }
