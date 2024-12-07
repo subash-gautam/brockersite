@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 0, 10px;
+}
+/* Navbar Css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4169e1;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px; /* Adjust as per your requirement */
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    background-color: #008000;
+}
+#loginnav {
+    background-color: #ffa500;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Heading and Paragraph */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Checkbox */
+label[for="agreement"] {
+    display: block;
+    margin-bottom: 15px;
+}
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* Error */
+.error {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: #ffe6e6;
+    border: 1px solid #ff4d4d;
+    padding: 8px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+/* Footer */
+.footer {
+    margin-top: 15px;
+    color: #fff;
+    background-color: #4169e1;
+    padding: 10px;
+    text-align: center;
+}
