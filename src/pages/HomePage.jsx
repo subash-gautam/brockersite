@@ -5,7 +5,7 @@ import Service from "../components/Service";
 function HomePage() {
     return (
         <>
-            <h1 className="firsth1">Welcome to Sani Securities..</h1>
+            <h1 className="firsth1">Welcome to Sani Securities....</h1>
             <h3>
                 Start your journey to economic freedom with trusted brokerage
                 services.

@@ -20,6 +20,10 @@ function ContactForm() {
             newErrors.email = "Please enter a valid email address.";
         }
 
+        if (!email) {
+            newErrors.email = "Email is reqfuired.";
+        }
+
         if (message.trim() === "") {
             newErrors.message = "Message cannot be empty.";
         }
